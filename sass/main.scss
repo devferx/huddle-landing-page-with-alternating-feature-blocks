@@ -1,0 +1,30 @@
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --veryPaleCyan: hsl(193, 100%, 96%);
+  --veryDarkCyan: hsl(192, 100%, 9%);
+  --grayishBlue: hsl(208, 11%, 55%);
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--grayishBlue);
+}
+
+@import './hero.scss';
+@import './content.scss';
+@import './footer.scss';
+@import './copyright.scss';
+
+.button {
+  background-color: var(--pink);
+  border: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  height: 55px;
+  width: 40%;
+  outline: none;
+  margin-top: 15px;
+  border-radius: 100px;
+}

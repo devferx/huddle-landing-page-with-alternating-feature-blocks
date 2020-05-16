@@ -1,0 +1,16 @@
+.copyright {
+  background-color: var(--veryDarkCyan);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 0px 25px;
+
+  &--text {
+    color: white;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+}
