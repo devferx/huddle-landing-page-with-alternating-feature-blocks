@@ -127,6 +127,23 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .content__card {
+    flex-direction: column-reverse;
+  }
+  .content__card:nth-child(2) {
+    flex-direction: column;
+  }
+  .content__card__container {
+    width: 100%;
+  }
+  .content__card__container--title, .content__card__container--paragraph {
+    text-align: center;
+  }
+  .content__card--image_container {
+    width: 65%;
+  }
+}
 .footer {
   display: flex;
   justify-content: center;

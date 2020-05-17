@@ -39,3 +39,27 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    &__card {
+      flex-direction: column-reverse;
+
+      &:nth-child(2) {
+        flex-direction: column;
+      }
+
+      &__container {
+        width: 100%;
+        &--title,
+        &--paragraph {
+          text-align: center;
+        }
+      }
+
+      &--image_container {
+        width: 65%;
+      }
+    }
+  }
+}
