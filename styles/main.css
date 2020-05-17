@@ -68,24 +68,27 @@ body {
   .hero {
     background: url(../images/bg-hero-mobile.svg), var(--veryPaleCyan);
   }
-  .hero__nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .hero__nav--logo {
-    height: 20px;
-  }
-  .hero__nav__content {
+  .hero__content {
     flex-direction: column;
   }
-  .hero__nav__content__text-content {
+  .hero__content__text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    padding: 0px 25px;
+    margin-bottom: 30px;
   }
-  .hero__nav__content__text-content--title {
-    font-size: 28px;
+  .hero__content__text-content--title {
+    text-align: center;
+  }
+  .hero__content__text-content--paragraph {
+    text-align: center;
+  }
+  .hero__content__text-content .button {
+    width: 65%;
+  }
+  .hero__content__image {
+    width: 100%;
   }
 }
 .content {
@@ -148,6 +151,7 @@ body {
 }
 .footer__contact-card--title {
   color: var(--veryDarkCyan);
+  text-align: center;
 }
 .footer__contact-card .button {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -194,6 +198,30 @@ body {
   font-size: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__contact-card {
+    align-self: center;
+    width: 90%;
+    margin: 0px 0px;
+  }
+  .footer__contact-card .button {
+    width: 70%;
+  }
+  .footer__column {
+    width: 100%;
+  }
+  .footer__column__list {
+    padding-left: 0px;
+  }
+  .footer__column__icons {
+    align-self: center;
+    margin-bottom: 30px;
+  }
+}
 .copyright {
   background-color: var(--veryDarkCyan);
   height: 30px;
